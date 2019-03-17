@@ -2,7 +2,10 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## The function takes matrix as its input, sets the values of the matrix ,
+## gets the value of the matrix and sets the inverse of that matrix
+makeCacheMatrix <- function(x = matrix()) 
+{
   inv <- NULL
   set <- function(y) 
   {
@@ -20,8 +23,12 @@
 
 
 ## Write a short comment describing this function
+## This function checks if the matrix inverse is there or not,
+## if not available then it gets the matrix data and sets the inverse
+## if it has the inverse then a message is displayed and cached data is returned
 
-
+cacheSolve <- function(x, ...) 
+{
   inv <- x$getInverse()
   if(!is.null(inv)) 
   {
